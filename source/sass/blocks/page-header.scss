@@ -6,7 +6,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 100;
   width: 100%;
   margin: 0;
   padding: 21px $content-padding 18px;
@@ -17,9 +17,16 @@
   border-top: 1px solid #485461;
   border-bottom: 1px solid $black;
   box-sizing: border-box;
+
+  &--bg {
+    background-color: rgba($black, 0.3%);
+    border-bottom: none;
+  }
 }
 
 .page-header__logo-image {
+  position: relative;
+  z-index: 100;
   width: 76px;
   height: 22px;
   fill: $white;
@@ -36,11 +43,16 @@
 }
 
 .page-header__toggle {
+  display: none;
   width: 30px;
   height: 30px;
   border: none;
   cursor: pointer;
   background-color: transparent;
+
+  &--js {
+    display: block;
+  }
 }
 
 .page-header__toggle-image {
@@ -86,7 +98,7 @@
 
   .page-header__wrapper {
     padding: 27px 130px 36px;
-    background-color: rgba($black, 0.3%);
+    background-color: transparent;
     border: none;
   }
 

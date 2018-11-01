@@ -25,6 +25,7 @@
         </a>
         <button class="page-header__toggle" type="button" aria-label="Закрыть меню">
           <svg class="page-header__toggle-image">
+            <use xlink:href="#icon-menu-burger"></use>
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
@@ -32,13 +33,17 @@
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a></li>
+            <a class="main-nav__link main-nav__link--current">Главная</a>
+          </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current">Фотографии</a></li>
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -298,6 +303,8 @@
         </a>
       </address>
     </footer>
+
+  <script src="js/script.js"></script>
 
   </body>
 </html>

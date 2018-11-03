@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
-    top: 112px;
+    top: 110px;
   }
 }
 
@@ -55,11 +55,10 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 790px;
     display: flex;
-    padding-left: 410px;
     flex-wrap: wrap;
-    background-color: rgba($black, 0.3%);
+    background-color: transparent;
     box-sizing: border-box;
   }
 

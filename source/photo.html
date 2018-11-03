@@ -4,11 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -33,10 +36,10 @@
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current">Главная</a>
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
+            <a class="main-nav__link main-nav__link--current" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Конкурс</a>
@@ -304,7 +307,7 @@
       </address>
     </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 
   </body>
 </html>

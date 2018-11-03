@@ -365,7 +365,7 @@
     }
 
     &--text-area {
-      padding: 34px 58px 33px;
+      padding: 34px 0 33px;
     }
   }
 
@@ -453,8 +453,8 @@
   }
 
   .form__text--area {
-    margin: 0;
-    width: 100%;
+    margin: 0 58px;
+    width: 820px;
     min-height: 128px;
   }
 

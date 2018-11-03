@@ -78,6 +78,14 @@
   &:active {
     border-color: $pink;
   }
+
+  &--required {
+    border-color: $pink;
+
+    &::placeholder {
+      color: $pink;
+    }
+  }
 }
 
 .form__title {

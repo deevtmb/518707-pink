@@ -1,5 +1,11 @@
 .page-header {
   @include indent-reset;
+  position: absolute;
+  width: 100%;
+
+  &--open {
+    position: relative;
+  }
 }
 
 .page-header__wrapper {
@@ -19,6 +25,7 @@
   box-sizing: border-box;
 
   &--bg {
+    position: relative;
     background-color: rgba($black, 0.3%);
     border-bottom: none;
   }

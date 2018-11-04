@@ -1,13 +1,17 @@
-.main-nav__list {
-  @include list-reset;
+.main-nav {
   position: relative;
   top: 71px;
-  display: block;
   z-index: 20;
+  display: block;
 
   &--close {
     display: none;
   }
+}
+
+.main-nav__list {
+  @include list-reset;
+  position: relative;
 }
 
 .main-nav__item {
@@ -46,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
-    top: 110px;
+    top: 39px;
   }
 }
 

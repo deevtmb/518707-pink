@@ -1,4 +1,5 @@
-var menu = document.querySelector(".main-nav__list");
+var menu = document.querySelector(".main-nav");
+var header = document.querySelector(".page-header");
 var menuBg = document.querySelector(".page-header__wrapper");
 var menuToggle = document.querySelector(".page-header__toggle");
 var cross = document.querySelector(".menu-cross");
@@ -13,7 +14,7 @@ var firstName = document.querySelector("#first-name");
 var email = document.querySelector("#mail");
 
 document.addEventListener("DOMContentLoaded", function() {
-  menu.classList.add("main-nav__list--close");
+  menu.classList.add("main-nav--close");
   menuBg.classList.add("page-header__wrapper--bg");
   menuToggle.classList.add("page-header__toggle--js");
   cross.style.display = "none";
@@ -21,9 +22,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 menuToggle.addEventListener("click", function(evt) {
   evt.preventDefault();
-  menu.classList.toggle("main-nav__list--close");
+  menu.classList.toggle("main-nav--close");
+  header.classList.toggle("page-header--open");
   menuBg.classList.toggle("page-header__wrapper--bg");
-  if (menu.classList.contains("main-nav__list--close")) {
+  if (menu.classList.contains("main-nav--close")) {
     cross.style.display = "none";
     burger.style.display = "block";
   } else {

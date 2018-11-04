@@ -98,13 +98,17 @@
     position: absolute;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    z-index: 100;
+    background-color: rgba($black, 0.3%);
   }
 
   .page-header__wrapper {
+    width: auto;
+    position: relative;
     padding: 27px 130px 36px;
-    background-color: rgba($black, 0.3%);
     border: none;
+    background-color: transparent;
   }
 
   .page-header__toggle {

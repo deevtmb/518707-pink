@@ -52,18 +52,17 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    position: absolute;
+    width: 100%;
     top: 0;
-    right: 0;
-    width: 790px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background-color: transparent;
     box-sizing: border-box;
   }
 
   .main-nav__item {
-    padding: 44px 40px 40px;
+    padding: 44px 40px 40px 41px;
     background-color: transparent;
     border: none;
   }

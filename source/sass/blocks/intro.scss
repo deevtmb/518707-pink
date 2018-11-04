@@ -10,6 +10,7 @@
 
   &--index {
     min-height: 464px;
+    padding-top: 178px;
   }
 }
 
@@ -49,11 +50,9 @@
 }
 
 .intro__image {
-  position: absolute;
+  display: block;
   width: 258px;
   height: 286px;
-  left: 0;
-  bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -67,6 +66,7 @@
 
     &--index {
       min-height: 727px;
+      padding-top: 0;
     }
   }
 
@@ -95,6 +95,8 @@
   }
 
   .intro__image {
+    position: absolute;
+    bottom: 0;
     width: 700px;
     height: 545px;
     left: -20px;

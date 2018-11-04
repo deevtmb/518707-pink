@@ -15,6 +15,7 @@ var email = document.querySelector("#mail");
 
 document.addEventListener("DOMContentLoaded", function() {
   menu.classList.add("main-nav--close");
+  header.classList.add("page-header--close");
   menuBg.classList.add("page-header__wrapper--bg");
   menuToggle.classList.add("page-header__toggle--js");
   cross.style.display = "none";
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 menuToggle.addEventListener("click", function(evt) {
   evt.preventDefault();
   menu.classList.toggle("main-nav--close");
-  header.classList.toggle("page-header--open");
+  // header.classList.toggle("page-header--close");
   menuBg.classList.toggle("page-header__wrapper--bg");
   if (menu.classList.contains("main-nav--close")) {
     cross.style.display = "none";

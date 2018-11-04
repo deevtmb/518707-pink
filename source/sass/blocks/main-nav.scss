@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
-  top: 71px;
-  z-index: 20;
+  top: 70px;
+  z-index: 110;
   display: block;
 
   &--close {
@@ -49,15 +49,19 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__list {
-    top: 39px;
+  .main-nav {
+    top: 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    display: block;
+    top: 0;
+  }
+
   .main-nav__list {
     width: 100%;
-    top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

@@ -1,11 +1,7 @@
 .page-header {
   @include indent-reset;
-  position: absolute;
+  position: relative;
   width: 100%;
-
-  &--open {
-    position: relative;
-  }
 }
 
 .page-header__wrapper {

@@ -482,9 +482,11 @@
     color: $blue;
   }
 }
-@-moz-document url-prefix() {
+
+@-moz-document url-prefix("") {
   @media (min-width: $tablet-width) {
     .form__text {
+      padding: 19px;
       line-height: 10px;
     }
 

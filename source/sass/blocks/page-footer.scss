@@ -29,7 +29,7 @@
 
 .page-footer__social {
   @include list-reset;
-  padding: 36px 0;
+  padding: 27px 0;
 }
 
 .page-footer__author {
@@ -75,7 +75,7 @@
 
   .page-footer__social {
     padding-right: 20px;
-    padding-top: 41px;
+    padding-top: 32px;
   }
 
   .page-footer__author {
@@ -89,14 +89,14 @@
   }
 
   .page-footer__social {
-    padding: 46px 0 31px 5px;
+    padding: 37px 0 22px 5px;
 
     &--photo {
       padding-left: 11px;
     }
 
     &--form {
-      padding: 45px 0 32px 15px;
+      padding: 37px 0 23px 15px;
     }
   }
 

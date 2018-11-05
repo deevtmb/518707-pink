@@ -1,11 +1,12 @@
 .social {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .social__link {
   display: block;
-  margin: 0 9px;
+  margin: 9px;
   width: 45px;
   height: 45px;
   box-shadow: 0 0 0 3px #e9ebec;
@@ -33,5 +34,17 @@
     opacity: 0.5;
     box-shadow: 0 0 0 3px #e9ebec;
     transition: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    max-width: 600px;
   }
 }

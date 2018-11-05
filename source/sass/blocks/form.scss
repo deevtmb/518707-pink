@@ -316,6 +316,7 @@
   .form__item--contacts .form__text {
     order: -1;
     margin-top: 17px;
+    padding-right: 80px;
   }
 
   .form__text--area {
@@ -395,6 +396,10 @@
     &--radio {
       margin: 0;
     }
+
+    &--checkbox {
+      margin-left: 40px;
+    }
   }
 
   .form__list--name .form__text {
@@ -421,7 +426,7 @@
   }
 
   .form__list--contacts .form__text {
-    padding: 23px 18px 21px;
+    padding: 23px 80px 21px 18px;
   }
 
   .form__list--contacts .form__text-label {
@@ -430,6 +435,7 @@
 
   .form__list--checkbox .form__item {
     order: 1;
+    margin-left: 20px;
 
     &:nth-child(2n) {
       order: 2;
@@ -440,15 +446,15 @@
     }
 
     &:nth-child(2) {
-      flex-grow: 3;
+      flex-grow: 5;
     }
 
     &:nth-child(3) {
-      flex-grow: 11;
+      flex-grow: 12;
     }
 
     &:nth-child(4) {
-      flex-grow: 2;
+      flex-grow: 3;
     }
 
     &:nth-child(5) {

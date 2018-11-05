@@ -4,27 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
-    <div style="display:none">
+    <div class="sprite">
       <include src="build/img/sprite.svg"></include>
     </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html" aria-label="Пинк">
-          <svg class="page-header__logo-image">
+          <svg class="page-header__logo-image" width="146" height="40">
             <use xlink:href="#logo-pink-white-mobile"></use>
             <use xlink:href="#logo-pink-white-tablet"></use>
             <use xlink:href="#logo-pink-white-desktop"></use>
           </svg>
         </a>
         <button class="page-header__toggle" type="button" aria-label="Закрыть меню">
-          <svg class="page-header__toggle-image">
+          <svg class="page-header__toggle-image" width="24" height="24">
+            <use xlink:href="#icon-menu-burger"></use>
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
@@ -32,13 +36,17 @@
       <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a></li>
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current">Фотографии</a></li>
+            <a class="main-nav__link main-nav__link--current" href="photo.html">Фотографии</a>
+          </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <a class="main-nav__link" href="form.html">Конкурс</a>
+          </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
+            <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -64,15 +72,10 @@
                 <img class="photo__image photo__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
               </picture>
             </a>
-            <div class="photo__comment-wrapper photo__comment-wrapper--panorama">
-              <blockquote class="photo__comment photo__comment--panorama">
-                <p class="photo__author-wrapper">
-                  <cite class="photo__comment-author">Анна </cite>
-                  <span class="photo__comment-time">(5 минут назад)</span>
-                </p>
-                <p class="photo__comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              </blockquote>
-              <p class="photo__comment-like photo__comment-like--panorama">Нравится: <span class="photo__comment-like-count">215</span></p>
+            <div class="photo__comment photo__comment--panorama">
+              <p class="photo__author photo__author--panorama">Анна <span class="photo__comment-time">(5 минут назад)</span></p>
+              <p class="photo__comment-text photo__comment-text--panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <a class="photo__comment-like photo__comment-like--panorama" href="#">Нравится: <span class="photo__comment-like-count">215</span></a>
             </div>
           </li>
           <li class="photo__item">
@@ -86,15 +89,10 @@
                 <img class="photo__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Авто">
               </picture>
             </a>
-            <div class="photo__comment-wrapper">
-              <blockquote class="photo__comment">
-                <p class="photo__author-wrapper">
-                  <cite class="photo__comment-author">Левон </cite>
-                  <span class="photo__comment-time">(5 часов назад)</span>
-                </p>
+            <div class="photo__comment">
+                <p class="photo__author">Левон <span class="photo__comment-time">(5 часов назад)</span></p>
                 <p class="photo__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              </blockquote>
-              <p class="photo__comment-like">Нравится: <span class="photo__comment-like-count">356</span></p>
+                <a class="photo__comment-like" href="#">Нравится: <span class="photo__comment-like-count">356</span></a>
             </div>
           </li>
           <li class="photo__item">
@@ -108,15 +106,10 @@
                 <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
               </picture>
             </a>
-            <div class="photo__comment-wrapper">
-              <blockquote class="photo__comment">
-                <p class="photo__author-wrapper">
-                  <cite class="photo__comment-author">Антон </cite>
-                  <span class="photo__comment-time">(12 часов назад)</span>
-                </p>
-                <p class="photo__comment-text">Соседи будут рады!</p>
-              </blockquote>
-              <p class="photo__comment-like">Нравится: <span class="photo__comment-like-count">666</span></p>
+            <div class="photo__comment">
+              <p class="photo__author">Антон <span class="photo__comment-time">(12 часов назад)</span></p>
+              <p class="photo__comment-text">Соседи будут рады!</p>
+              <a class="photo__comment-like" href="#">Нравится: <span class="photo__comment-like-count">666</span></a>
             </div>
           </li>
           <li class="photo__item">
@@ -130,16 +123,10 @@
                 <img class="photo__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окно">
               </picture>
             </a>
-            <div class="photo__comment-wrapper">
-              <blockquote class="photo__comment">
-                <p class="photo__author-wrapper">
-                  <cite class="photo__comment-author">Борис </cite>
-                  <span class="photo__comment-time">(20 часов назад)
-                  </span>
-                </p>
-                <p class="photo__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              </blockquote>
-              <p class="photo__comment-like">Нравится: <span class="photo__comment-like-count">215</span></p>
+            <div class="photo__comment">
+              <p class="photo__author">Борис <span class="photo__comment-time">(20 часов назад)</span></p>
+              <p class="photo__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <a class="photo__comment-like" href="#">Нравится: <span class="photo__comment-like-count">215</span></a>
             </div>
           </li>
           <li class="photo__item">
@@ -153,15 +140,10 @@
                 <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Ярмарка">
               </picture>
             </a>
-            <div class="photo__comment-wrapper">
-              <blockquote class="photo__comment">
-                <p class="photo__author-wrapper">
-                  <cite class="photo__comment-author">Сергей </cite>
-                  <span class="photo__comment-time">(25 часов назад)</span>
-                </p>
-                <p class="photo__comment-text">Самая кубанская в мире!</p>
-              </blockquote>
-              <p class="photo__comment-like">Нравится: <span class="photo__comment-like-count">4</span></p>
+            <div class="photo__comment">
+              <p class="photo__author">Сергей <span class="photo__comment-time">(25 часов назад)</span></p>
+              <p class="photo__comment-text">Самая кубанская в мире!</p>
+              <a class="photo__comment-like" href="#">Нравится: <span class="photo__comment-like-count">4</span></a>
             </div>
           </li>
           <li class="photo__item">
@@ -175,15 +157,10 @@
                 <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Скалы">
               </picture>
             </a>
-            <div class="photo__comment-wrapper">
-              <blockquote class="photo__comment">
-                <p class="photo__author-wrapper">
-                  <cite class="photo__comment-author">Максим </cite>
-                  <span class="photo__comment-time">(40 часов назад)</span>
-                </p>
-                <p class="photo__comment-text">Где снег-то?</p>
-              </blockquote>
-              <p class="photo__comment-like">Нравится: <span class="photo__comment-like-count">150</span></p>
+            <div class="photo__comment">
+              <p class="photo__author">Максим <span class="photo__comment-time">(40 часов назад)</span></p>
+              <p class="photo__comment-text">Где снег-то?</p>
+              <a class="photo__comment-like" href="#">Нравится: <span class="photo__comment-like-count">150</span></a>
             </div>
           </li>
           <li class="photo__item">
@@ -197,15 +174,10 @@
                 <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолета">
               </picture>
             </a>
-            <div class="photo__comment-wrapper">
-              <blockquote class="photo__comment">
-                <p class="photo__author-wrapper">
-                  <cite class="photo__comment-author">Надежда </cite>
-                  <span class="photo__comment-time">(45 часов назад)</span>
-                </p>
-                <p class="photo__comment-text">Всем GM и взаимные лайки!</p>
-              </blockquote>
-              <p class="photo__comment-like">Нравится: <span class="photo__comment-like-count">2560</span></p>
+            <div class="photo__comment">
+              <p class="photo__author">Надежда <span class="photo__comment-time">(45 часов назад)</span></p>
+              <p class="photo__comment-text">Всем GM и взаимные лайки!</p>
+              <a class="photo__comment-like" href="#">Нравится: <span class="photo__comment-like-count">2560</span></a>
             </div>
           </li>
         </ul>
@@ -230,7 +202,7 @@
             <ul class="edit__list">
               <li class="edit__item">
                 <label class="edit__type edit__type--crop" for="crop" aria-label="Обрезка фото" tabindex="0">
-                  <svg class="edit__type-icon edit__type-icon--crop edit__type-icon--active">
+                  <svg class="edit__type-icon edit__type-icon--crop edit__type-icon--active" width="50" height="50">
                     <use xlink:href="#icon-editor-crop"></use>
                   </svg>
                 </label>
@@ -241,7 +213,7 @@
               </li>
               <li class="edit__item">
                 <label class="edit__type edit__type--fill" for="fill" aria-label="Заливка" tabindex="0">
-                  <svg class="edit__type-icon edit__type-icon--fill">
+                  <svg class="edit__type-icon edit__type-icon--fill" width="50" height="50">
                     <use xlink:href="#icon-editor-fill"></use>
                   </svg>
                 </label>
@@ -252,7 +224,7 @@
               </li>
               <li class="edit__item">
                 <label class="edit__type edit__type--contrast" for="contrast" aria-label="Контраст" tabindex="0">
-                  <svg class="edit__type-icon edit__type-icon--contrast">
+                  <svg class="edit__type-icon edit__type-icon--contrast" width="50" height="50">
                     <use xlink:href="#icon-editor-contrast"></use>
                   </svg>
                 </label>
@@ -273,7 +245,7 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo" href="index.html" aria-label="Главная страница Пинк">
-        <svg class="page-footer__logo-image">
+        <svg class="page-footer__logo-image" width="146" height="40">
           <use xlink:href="#logo-pink-blue-mobile"></use>
           <use xlink:href="#logo-pink-blue-desktop"></use>
         </svg>
@@ -298,6 +270,8 @@
         </a>
       </address>
     </footer>
+
+  <script src="js/script.min.js"></script>
 
   </body>
 </html>

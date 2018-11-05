@@ -1,9 +1,17 @@
+.main-nav {
+  position: relative;
+  top: 70px;
+  z-index: 110;
+  display: block;
+
+  &--close {
+    display: none;
+  }
+}
+
 .main-nav__list {
   @include list-reset;
   position: relative;
-  top: 70px;
-  display: block;
-  z-index: 20;
 }
 
 .main-nav__item {
@@ -41,21 +49,28 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__list {
-    top: 111px;
+  .main-nav {
+    top: 110px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__list {
-    position: absolute;
+  .main-nav {
+    display: block;
     top: 0;
-    right: 90px;
+  }
+
+  .main-nav__list {
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: transparent;
+    box-sizing: border-box;
   }
 
   .main-nav__item {
-    padding: 44px 40px 40px;
+    padding: 44px 40px 40px 41px;
     background-color: transparent;
     border: none;
   }

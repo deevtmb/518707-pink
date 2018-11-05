@@ -19,7 +19,7 @@
   }
 
   &--text-area {
-    padding: 20px 0 38px;
+    padding: 20px 0 40px;
     background-color: $white;
   }
 }
@@ -51,13 +51,15 @@
 
 .form__text {
   width: 100%;
-  padding: 24px 20px 20px;
+  height: 64px;
+  padding: 24px 20px;
   border: 2px solid #e5e5e5;
   transition: all 0.3s ease-in;
+  box-sizing: border-box;
 
   &::placeholder {
     font-size: 18px;
-    line-height: 30px;
+    line-height: 18px;
     color: $blue;
   }
 
@@ -67,7 +69,12 @@
     padding-top: 15px;
     padding-left: 18px;
     min-height: 200px;
+    line-height: 30px;
     box-sizing: border-box;
+
+    &::placeholder {
+      line-height: 30px;
+    }
   }
 
   &:hover {
@@ -78,13 +85,21 @@
   &:active {
     border-color: $pink;
   }
+
+  &--required {
+    border-color: $pink;
+
+    &::placeholder {
+      color: $pink;
+    }
+  }
 }
 
 .form__title {
   display: block;
   width: 280px;
   padding: 40px 20px 0;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   color: $pink;
   line-height: 18px;
@@ -231,6 +246,7 @@
     }
 
     &--text-area {
+      min-height: 296px;
       order: 5;
       padding: 0;
     }
@@ -265,10 +281,14 @@
     padding-right: 18px;
   }
 
+  .form__text {
+    height: 63px;
+  }
+
   .form__item--name .form__text {
     width: auto;
     margin: 21px 0 31px;
-    padding: 23px 20px 20px;
+    padding: 24px 20px 20px;
     flex-grow: 1;
   }
 
@@ -313,7 +333,7 @@
   }
 
   .form__send {
-    margin: 29px 0 48px;
+    margin: 31px 0 48px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -357,7 +377,8 @@
     }
 
     &--text-area {
-      padding: 34px 58px 33px;
+      padding: 34px 0 33px;
+      min-height: 155px;
     }
   }
 
@@ -445,8 +466,8 @@
   }
 
   .form__text--area {
-    margin: 0;
-    width: 100%;
+    margin: 0 58px;
+    width: 820px;
     min-height: 128px;
   }
 
@@ -454,11 +475,64 @@
   .form__send {
     width: 100%;
     padding: 0;
-    margin: 8px 0 0;
+    margin: 9px 0 0;
   }
 
   .form__note .form__hide {
     display: inline;
     color: $blue;
+  }
+}
+
+@-moz-document url-prefix("") {
+  @media (min-width: $tablet-width) {
+    .form__text {
+      padding: 19px;
+      line-height: 10px;
+    }
+
+    .form__send {
+      margin-top: 31px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .form__send {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  .form__text {
+    font-size: 18px;
+    line-height: 10px;
+
+    &--area {
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 659px) {
+    .form__send {
+      margin-top: 10px;
+    }
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  .form__text {
+    font-size: 18px;
+    line-height: 10px;
+
+    &--area {
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: 659px) {
+    .form__send {
+      margin-top: 10px;
+    }
   }
 }

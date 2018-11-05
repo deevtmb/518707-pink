@@ -1,8 +1,6 @@
-.intro-download {
-  position: relative;
-}
-
 .download {
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 10;
   margin: 0;
@@ -92,10 +90,8 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    position: absolute;
-    bottom: 0;
     width: 300px;
-    padding-bottom: 110px;
+    padding-top: 173px;
     background-color: transparent;
   }
 
@@ -120,10 +116,11 @@
 
   .download__title {
     display: block;
-    margin: 150px 30px 30px;
+    margin: 30px;
   }
 
   .download__info {
+    margin-top: 0;
     font-size: 18px;
     line-height: 24px;
     color: rgba($white, 0.7%);
@@ -132,7 +129,8 @@
 
 @media (min-width: $desktop-width) {
   .download {
-    padding-left: 130px;
+    margin-left: 110px;
+    padding-top: 202px;
     bottom: 13px;
   }
 

@@ -2,6 +2,7 @@
   font-weight: normal;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: swap;
   src:
     url("../fonts/opensans.woff2") format("woff2"),
     url("../fonts/opensans.woff") format("woff");
@@ -11,6 +12,7 @@
   font-weight: bold;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: swap;
   src:
     url("../fonts/opensansbold.woff2") format("woff2"),
     url("../fonts/opensansbold.woff") format("woff");
@@ -20,6 +22,7 @@
   font-weight: 100;
   font-family: "Open Sans";
   font-style: normal;
+  font-display: swap;
   src:
     url("../fonts/opensanslight.woff2") format("woff2"),
     url("../fonts/opensanslight.woff") format("woff");
@@ -46,6 +49,10 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.sprite {
+  display: none;
 }
 
 @media (min-width: $mobile-width) {

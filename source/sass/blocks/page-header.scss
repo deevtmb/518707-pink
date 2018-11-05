@@ -56,14 +56,17 @@
 
 .page-header__toggle {
   display: none;
+  padding: 0 0 3px;
   width: 30px;
   height: 30px;
   border: none;
   cursor: pointer;
   background-color: transparent;
+  text-align: end;
 
   &--js {
     display: block;
+    width: 55px;
   }
 }
 
@@ -71,6 +74,10 @@
   width: 24px;
   height: 24px;
   fill: $white;
+
+  &--burger {
+    width: 50px;
+  }
 }
 
 .page-header__toggle:hover .page-header__toggle-image,

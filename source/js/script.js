@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 menuToggle.addEventListener("click", function(evt) {
   evt.preventDefault();
   menu.classList.toggle("main-nav--close");
-  // header.classList.toggle("page-header--close");
+  header.classList.toggle("page-header--close");
   menuBg.classList.toggle("page-header__wrapper--bg");
   if (menu.classList.contains("main-nav--close")) {
     cross.style.display = "none";

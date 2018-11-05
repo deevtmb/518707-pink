@@ -12,6 +12,32 @@
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
+
+    <!— Pixel Glass —>
+    <style>
+      html {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        background-image: url( "img/preview/pink-index-mobile.jpg" );
+      }
+      @media ( min-width: 660px ) {
+        html {
+          background-image: url( "img/preview/pink-index-tablet.jpg" );
+        }
+      }
+      @media ( min-width: 960px ) {
+        html {
+          background-image: url( "img/preview/pink-index-desktop.jpg" );
+        }
+      }
+      body {
+        opacity: 0.5;
+      }
+    </style>
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!— // Pixel Glass —>
+
   </head>
   <body>
     <div class="sprite">
@@ -56,27 +82,29 @@
       <section class="intro-download">
         <div class="intro intro--index">
           <h1 class="intro__title visually-hidden">PINK - самое розовое мобильное приложение!</h1>
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-            <img class="intro__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Pink">
-          </picture>
+          <div class="intro__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+              <img class="intro__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Pink">
+            </picture>
+          </div>
           <div class="download">
             <p class="download__title">Взгляните на жизнь иначе!</p>
             <ul class="download__list">
               <li class="download__item download__item--default">
                 <a class="download__link download__link--default" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
               </li>
-              <li class="download__item">
+              <li class="download__item download__item--ios">
                 <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Скачать приложение на iOS</span></a>
               </li>
-              <li class="download__item">
+              <li class="download__item download__item--android">
                 <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru"><span class="visually-hidden">Скачать приложение на Android</span></a>
               </li>
-              <li class="download__item">
+              <li class="download__item download__item--windows">
                 <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows"><span class="visually-hidden">Скачать приложение на Windows</span></a>
               </li>
             </ul>
@@ -84,7 +112,6 @@
           </div>
 
         </div>
-
       </section>
 
       <section class="information">

@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  background: $blue url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
+  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
   background-size: 320px 464px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -49,9 +49,9 @@
   display: none;
 }
 
-.intro__image {
-  display: block;
-  width: 258px;
+.intro__image-wrapper {
+  margin: 0 auto;
+  width: 320px;
   height: 286px;
 }
 
@@ -66,7 +66,7 @@
 
     &--index {
       min-height: 727px;
-      padding-top: 0;
+      padding-top: 1px;
     }
   }
 
@@ -94,12 +94,14 @@
     display: inline;
   }
 
-  .intro__image {
+  .intro__image-wrapper {
     position: absolute;
-    bottom: 0;
-    width: 700px;
+    width: 660px;
     height: 545px;
-    left: -20px;
+    overflow: hidden;
+    bottom: 0;
+    left: 47%;
+    transform: translateX(-50%);
   }
 }
 
@@ -136,9 +138,9 @@
     }
   }
 
-  .intro__image {
-    width: 1050px;
+  .intro__image-wrapper {
+    width: 880px;
     height: 645px;
-    left: 12%;
+    left: 48.5%;
   }
 }

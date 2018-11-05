@@ -31,7 +31,7 @@
 body {
   position: relative;
   min-width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 14px;
@@ -53,22 +53,4 @@ a {
 
 .sprite {
   display: none;
-}
-
-@media (min-width: $mobile-width) {
-  body {
-    max-width: 320px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  body {
-    max-width: 660px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    max-width: 1200px;
-  }
 }

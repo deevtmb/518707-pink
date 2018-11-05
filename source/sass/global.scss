@@ -51,6 +51,10 @@ a {
   margin: -1px;
 }
 
+.sprite {
+  display: none;
+}
+
 @media (min-width: $mobile-width) {
   body {
     max-width: 320px;

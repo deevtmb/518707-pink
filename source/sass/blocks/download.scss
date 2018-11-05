@@ -13,7 +13,7 @@
   margin: 0;
   text-align: center;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 48px;
   color: $white;
 }
@@ -84,7 +84,7 @@
   @include indent-reset;
   margin-top: 23px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
   color: $white;
 }
 
@@ -146,8 +146,9 @@
 
   .download__item--default {
     margin-bottom: 22px;
+  }
+
+  .download__link--default {
     font-size: 21px;
-    line-height: 18px;
-    letter-spacing: 2px;
   }
 }

@@ -2,6 +2,10 @@
   @include indent-reset;
   position: relative;
   width: 100%;
+
+  &--close {
+    position: absolute;
+  }
 }
 
 .page-header__wrapper {

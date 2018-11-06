@@ -500,12 +500,11 @@
 }
 
 @-moz-document url-prefix("") {
-  @media (min-width: $tablet-width) {
-    .form__text {
-      padding: 19px;
-      line-height: 10px;
-    }
+  .form__list .form__text {
+    padding: 20px 19px;
+  }
 
+  @media (min-width: $tablet-width) {
     .form__send {
       margin-top: 31px;
     }
@@ -527,12 +526,6 @@
       line-height: 30px;
     }
   }
-
-  @media (max-width: 659px) {
-    .form__send {
-      margin-top: 10px;
-    }
-  }
 }
 
 @supports (-ms-ime-align: auto) {
@@ -542,12 +535,6 @@
 
     &--area {
       line-height: 30px;
-    }
-  }
-
-  @media (max-width: 659px) {
-    .form__send {
-      margin-top: 10px;
     }
   }
 }

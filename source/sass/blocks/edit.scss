@@ -21,7 +21,7 @@
 }
 
 .edit__wrapper {
-  padding: 5px $content-padding 9px;
+  padding: 5px 0 9px;
   width: 320px;
   background-color: $gray;
 }
@@ -188,6 +188,12 @@
     width: 450px;
     padding: 44px 0 69px;
     font-size: 18px;
+  }
+
+  @-moz-document url-prefix("") {
+    .edit__text {
+      padding: 47px 0 69px;
+    }
   }
 
   .edit__image {

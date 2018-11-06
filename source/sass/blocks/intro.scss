@@ -3,7 +3,7 @@
   background: #1d2631 url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
   background-size: 320px 464px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (min-width: 321px) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px 464px;
   }
@@ -17,7 +17,7 @@
 .intro__title {
   width: 280px;
   margin: 0 auto;
-  padding: 100px $content-padding 84px;
+  padding: 99px $content-padding 84px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -70,14 +70,14 @@
     }
 
     &--index {
-      min-height: 727px;
+      min-height: 726px;
       padding-top: 1px;
     }
   }
 
   .intro__title {
     width: 620px;
-    padding-top: 180px;
+    padding-top: 179px;
     padding-bottom: 139px;
     font-size: 50px;
     line-height: 60px;
@@ -122,7 +122,7 @@
     }
 
     &--index {
-      min-height: 854px;
+      min-height: 853px;
     }
   }
 

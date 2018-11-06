@@ -3,10 +3,12 @@
   position: relative;
   width: 100%;
   background-color: $blue;
+  z-index: 20;
 
   &--close {
     position: absolute;
-    background-color: transparent;
+    background-color: rgba($black, 0.3%);
+    border-bottom: none;
   }
 }
 
@@ -21,17 +23,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: $blue;
   border-top: 1px solid #485461;
-  border-bottom: 1px solid $black;
   box-sizing: border-box;
   transform: translateX(-50%);
 
   &--bg {
     position: relative;
     left: 0;
-    background-color: rgba($black, 0.3%);
-    border-bottom: none;
     transform: translateX(0);
   }
 }
@@ -118,18 +116,26 @@
     position: absolute;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
     z-index: 100;
     background-color: rgba($black, 0.3%);
   }
 
   .page-header__wrapper {
-    width: 200px;
-    margin-left: 0;
+    width: 290px;
+    margin: 0;
     position: relative;
+    left: 145px;
     padding: 27px 10px 36px;
     border: none;
     background-color: transparent;
+    box-sizing: padding-box;
+
+    &--bg {
+      left: 0;
+    }
   }
 
   .page-header__toggle {

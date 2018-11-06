@@ -12,6 +12,7 @@
 .main-nav__list {
   @include list-reset;
   position: relative;
+  border-top: 1px solid $black;
 }
 
 .main-nav__item {
@@ -67,6 +68,7 @@
     justify-content: space-between;
     background-color: transparent;
     box-sizing: border-box;
+    border-top: none;
   }
 
   .main-nav__item {

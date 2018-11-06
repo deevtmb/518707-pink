@@ -26,6 +26,8 @@
 
 .form__list {
   @include list-reset;
+  width: 280px;
+  margin: 0 auto;
   padding: 0 $content-padding;
 }
 
@@ -49,6 +51,12 @@
   }
 }
 
+.form__text-wrapper {
+  width: 100%;
+  margin: 0;
+  display: flex;
+}
+
 .form__text {
   width: 100%;
   height: 64px;
@@ -65,7 +73,7 @@
 
   &--area {
     width: 280px;
-    margin: -4px 20px 0;
+    margin: -4px auto 10px;
     padding-top: 15px;
     padding-left: 18px;
     min-height: 200px;
@@ -112,7 +120,7 @@
 
   &--text-area {
     padding: 38px 0 0;
-    width: 320px;
+    width: 100%;
     background-color: $white;
   }
 }
@@ -188,6 +196,7 @@
 }
 
 .form__send {
+  text-align: center;
   margin-bottom: 6px;
   padding: 0 $content-padding;
   background-color: $white;
@@ -219,7 +228,7 @@
 
   .form__group {
     position: relative;
-    margin: 20px 20px 38px;
+    margin: 20px auto 38px;
     padding: 20px 0 42px;
     background-color: $white;
     border: 2px solid #e5e5e5;
@@ -253,14 +262,12 @@
   }
 
   .form__list {
+    width: 498px;
     padding: 0;
-    margin: 0 60px;
-
-    &--contacts {
-      margin: 0 58px;
-    }
+    margin: 0 58px;
 
     &--name {
+      width: 620px;
       margin: 0;
     }
   }
@@ -316,7 +323,7 @@
   .form__item--contacts .form__text {
     order: -1;
     margin-top: 17px;
-    padding-right: 80px;
+    padding: 25px 80px 23px 18px;
   }
 
   .form__text--area {
@@ -326,7 +333,7 @@
   }
 
   .form__label {
-    padding: 28px 57px 17px;
+    padding: 28px 58px 17px;
 
     &--check {
       padding-bottom: 24px;
@@ -334,7 +341,8 @@
   }
 
   .form__send {
-    margin: 31px 0 48px;
+    width: 620px;
+    margin: 31px auto 48px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -349,8 +357,8 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-left: 130px;
-    margin-right: 130px;
+    width: 940px;
+    margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -384,6 +392,7 @@
   }
 
   .form__list {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -458,7 +467,7 @@
     }
 
     &:nth-child(5) {
-      flex-grow: 1;
+      flex-grow: 2;
     }
   }
 

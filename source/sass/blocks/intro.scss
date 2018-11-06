@@ -15,8 +15,8 @@
 }
 
 .intro__title {
-  width: 100%;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 100px $content-padding 84px;
   text-align: center;
   font-size: 24px;
@@ -31,13 +31,18 @@
   }
 }
 
-.intro__text {
+.intro__text-wrapper {
   width: 100%;
   margin: 0;
+  background-color: $white;
+}
+
+.intro__text {
+  width: 320px;
+  margin: 0 auto;
   padding: 45px 35px 49px;
   text-align: center;
   line-height: 30px;
-  background-color: $white;
   box-sizing: border-box;
 
   &--form {
@@ -71,6 +76,7 @@
   }
 
   .intro__title {
+    width: 620px;
     padding-top: 180px;
     padding-bottom: 139px;
     font-size: 50px;
@@ -82,7 +88,8 @@
   }
 
   .intro__text {
-    padding: 93px 50px 75px;
+    width: 560px;
+    padding: 93px 0 75px;
     font-size: 18px;
 
     &--form {
@@ -123,7 +130,6 @@
     width: 600px;
     padding-top: 173px;
     padding-bottom: 101px;
-    margin: 0 auto;
 
     &--form {
       width: 800px;
@@ -131,7 +137,8 @@
   }
 
   .intro__text {
-    padding: 92px 300px 88px;
+    width: 600px;
+    padding: 92px 0 88px;
 
     &--form {
       padding: 92px 200px 71px;

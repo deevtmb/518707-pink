@@ -25,7 +25,7 @@
           background-image: url( "img/preview/pink-photo-tablet.jpg" );
         }
       }
-      @media ( min-width: 1200px ) {
+      @media ( min-width: 960px ) {
         html {
           background-image: url( "img/preview/pink-photo-desktop.jpg" );
         }
@@ -81,7 +81,9 @@
 
       <section class="intro">
         <h1 class="intro__title">Фотографии пользователей</h1>
-        <p class="intro__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <div class="intro__text-wrapper">
+          <p class="intro__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        </div>
       </section>
 
       <section class="photo">
@@ -210,9 +212,12 @@
       </section>
 
       <section class="edit">
-        <h2 class="visually-hidden">Редактирование фотографий.</h2>
-        <p class="edit__text"><span>Затмите&nbsp;их&nbsp;всех!</span>
-          <span>Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!</span></p>
+        <!--<h2 class="visually-hidden">Редактирование фотографий.</h2>-->
+        <div class="edit__text-wrapper">
+          <p class="edit__text"><span>Затмите&nbsp;их&nbsp;всех!</span>
+            <span>Выкладывайте&nbsp;все,&nbsp;что&nbsp;накопилось&nbsp;в телефоне!</span>
+          </p>
+        </div>
         <div class="edit__wrapper">
           <p class="edit__photo">
             <picture>

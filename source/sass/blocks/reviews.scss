@@ -77,7 +77,8 @@
 
 @media (min-width: $desktop-width) {
   .reviews__list {
-    width: 920px;
+    position: relative;
+    width: 940px;
     padding-top: 174px;
     padding-bottom: 32px;
 
@@ -121,12 +122,12 @@
     cursor: pointer;
 
     &--previous {
-      left: 3px;
+      left: -7px;
       top: 205px;
     }
 
     &--next {
-      right: 8px;
+      right: 0;
       top: 205px;
     }
   }

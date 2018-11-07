@@ -220,6 +220,8 @@
 
 @media (min-width: $tablet-width) {
   .form {
+    width: 620px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -342,6 +344,7 @@
 
   .form__send {
     width: 620px;
+    padding: 0;
     margin: 31px auto 48px;
     display: flex;
     flex-wrap: wrap;

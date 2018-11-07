@@ -20,6 +20,12 @@
   color: $blue;
 }
 
+@-moz-document url-prefix("") {
+  .edit__text {
+    padding: 21px 0 43px;
+  }
+}
+
 .edit__wrapper {
   padding: 5px 0 9px;
   width: 320px;
@@ -192,7 +198,7 @@
 
   @-moz-document url-prefix("") {
     .edit__text {
-      padding: 47px 0 69px;
+      padding: 46px 0 70px;
     }
   }
 

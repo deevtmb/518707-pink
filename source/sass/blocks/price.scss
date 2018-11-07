@@ -9,6 +9,7 @@
   @include list-reset;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .price__item {
@@ -249,5 +250,13 @@
     &:nth-child(2)::before {
       top: 61px;
     }
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (max-width: $tablet-width) {
+  .price__item {
+    position: relative;
+    left: 50%;
+    transform: translateX(-151%);
   }
 }

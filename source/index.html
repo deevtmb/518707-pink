@@ -53,8 +53,10 @@
           </svg>
         </a>
         <button class="page-header__toggle" type="button" aria-label="Закрыть меню">
-          <svg class="page-header__toggle-image" width="50" height="24">
+          <svg class="page-header__toggle-image page-header__toggle-image--burger" width="50" height="24">
             <use xlink:href="#icon-menu-burger"></use>
+          </svg>
+          <svg class="page-header__toggle-image page-header__toggle-image--cross" width="24" height="24">
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
@@ -194,23 +196,23 @@
               </div>
               <p class="reviews__text">Третий отзыв</p>
             </blockquote>
+            <p class="reviews__arrows">
+              <button class="reviews__arrow reviews__arrow--previous" type="button" aria-label="Предыдущий отзыв">
+                <svg class="reviews__arrow-image" width="26" height="34">
+                  <use xlink:href="#icon-review-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Следующий отзыв">
+                <svg class="reviews__arrow-image" width="26" height="34">
+                  <use xlink:href="#icon-review-arrow-right"></use>
+                </svg>
+              </button>
+            </p>
           </div>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--default" type="button"><span class="visually-hidden">Первый отзыв</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">Второй отзыв</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">Третий отзыв</span></button>
-          </p>
-          <p class="reviews__arrows">
-            <button class="reviews__arrow reviews__arrow--previous" type="button" aria-label="Предыдущий отзыв">
-              <svg class="reviews__arrow-image" width="26" height="34">
-                <use xlink:href="#icon-review-arrow-left"></use>
-              </svg>
-            </button>
-            <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Следующий отзыв">
-              <svg class="reviews__arrow-image" width="26" height="34">
-                <use xlink:href="#icon-review-arrow-right"></use>
-              </svg>
-            </button>
           </p>
         </div>
       </section>

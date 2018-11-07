@@ -61,21 +61,20 @@
   }
 
   &--ios {
-    margin: 0 15px;
     width: 46px;
     height: 56px;
     background: url("../img/logo-apple.svg") 50% 50% no-repeat;
   }
 
   &--android {
-    margin: 0 20px;
+    margin-left: 33px;
+    margin-right: 39px;
     width: 42px;
     height: 52px;
     background: url("../img/logo-android.svg") 50% 50% no-repeat;
   }
 
   &--windows {
-    margin: 0 15px;
     width: 42px;
     height: 46px;
     background: url("../img/logo-microsoft.svg") 50% 50% no-repeat;

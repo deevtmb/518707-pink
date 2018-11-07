@@ -14,21 +14,6 @@
   position: relative;
 }
 
-.photo__link--panorama::before {
-  content: "Панорама дня";
-  position: absolute;
-  top: 0;
-  right: $content-padding;
-  min-width: 140px;
-  padding: 6px 0;
-  font-size: 12px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  color: $white;
-  background-color: $pink;
-}
-
 .photo__comment {
   width: 100%;
   display: flex;
@@ -39,6 +24,16 @@
   background-color: $gray;
   color: $blue;
   box-sizing: border-box;
+
+  &--panorama {
+    position: relative;
+  }
+}
+
+@-moz-document url-prefix("") {
+  .photo__comment {
+    margin-bottom: 20.5px;
+  }
 }
 
 .photo__link {
@@ -66,6 +61,21 @@
 .photo__comment-text {
   width: 100%;
   margin: 0;
+
+  &--panorama::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: -137px;
+    right: 0;
+    min-width: 140px;
+    padding: 6px 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $pink;
+  }
 }
 
 .photo__comment-like {
@@ -117,17 +127,9 @@
     &--panorama {
       position: relative;
       width: auto;
-      margin: 0 auto;
       height: 509px;
     }
   }
-
-  .photo__link--panorama::before {
-    z-index: 10;
-    top: 57px;
-    right: 40px;
-  }
-
 
   .photo__comment {
     align-items: flex-start;
@@ -150,6 +152,12 @@
 
   .photo__comment-text {
     min-height: 49px;
+
+    &--panorama::before {
+      z-index: 10;
+      top: -453px;
+      right: 0;
+    }
   }
 
   .photo__comment-like {
@@ -178,14 +186,9 @@
     margin-bottom: 34px;
 
     &--panorama {
-      width: 1200px;
+      width: 100%;
       margin-bottom: 30px;
     }
-  }
-
-  .photo__link--panorama::before {
-    top: 54px;
-    right: 130px;
   }
 
   .photo__link {
@@ -193,18 +196,27 @@
     height: 400px;
 
     &--panorama {
-      left: 0;
-      width: 1200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
       height: 506px;
     }
   }
 
   .photo__comment--panorama {
-    width: 940px;
+    min-width: 940px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .photo__comment-text--panorama {
     min-height: auto;
+
+    &::before {
+      top: -453px;
+      right: 0;
+    }
   }
 
   .photo__comment-like--panorama {

@@ -83,7 +83,7 @@
     left: 50%;
     transform: translateX(-50%);
     background: url("../img/bg-triangle-white-footer.svg") 50% 100% no-repeat;
-    background-size: 100% auto;
+    background-size: 100% 30px;
   }
 
   &::after {
@@ -156,7 +156,7 @@
 
     &::before {
       height: 67px;
-      background-size: 120% auto;
+      background-size: 100% 67px;
     }
 
     &::after {
@@ -209,7 +209,7 @@
 
     &::before {
       height: 103px;
-      background-size: 115% 103px;
+      background-size: 120% 103px;
     }
 
     &::after {

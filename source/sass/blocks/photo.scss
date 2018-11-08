@@ -125,8 +125,11 @@
     height: 300px;
 
     &--panorama {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
       position: relative;
-      width: auto;
       height: 509px;
     }
   }

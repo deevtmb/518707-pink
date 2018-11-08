@@ -257,9 +257,10 @@
     }
 
     &--text-area {
-      min-height: 296px;
+      height: 296px;
       order: 5;
       padding: 0;
+      margin-bottom: 69px;
     }
   }
 
@@ -345,7 +346,7 @@
   .form__send {
     width: 620px;
     padding: 0;
-    margin: 31px auto 48px;
+    margin: 0 auto 48px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -391,6 +392,7 @@
     &--text-area {
       padding: 34px 0 33px;
       min-height: 155px;
+      height: auto;
     }
   }
 
@@ -505,18 +507,6 @@
 @-moz-document url-prefix("") {
   .form__list .form__text {
     padding: 20px 19px;
-  }
-
-  @media (min-width: $tablet-width) {
-    .form__send {
-      margin-top: 31px;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .form__send {
-      margin-top: 10px;
-    }
   }
 }
 

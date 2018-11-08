@@ -1,22 +1,33 @@
 .edit {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: $gray;
+}
+
+.edit__text-wrapper {
+  width: 100%;
   background-color: $white;
 }
 
 .edit__text {
-  width: 100%;
-  margin: 0;
+  width: 280px;
+  margin: 0 auto;
   padding: 23px 0 43px;
   text-align: center;
   line-height: 30px;
   color: $blue;
-  background-color: $white;
+}
+
+@-moz-document url-prefix("") {
+  .edit__text {
+    padding: 21px 0 43px;
+  }
 }
 
 .edit__wrapper {
-  padding: 5px $content-padding 9px;
+  padding: 5px 0 9px;
   width: 320px;
   background-color: $gray;
 }
@@ -32,6 +43,7 @@
 
 .edit__list {
   @include list-reset;
+  width: 320px;
   padding: 0;
   position: relative;
   display: flex;
@@ -87,7 +99,7 @@
 .edit__bar {
   position: absolute;
   bottom: 34px;
-  left: 20px;
+  left: 40px;
   width: 240px;
   height: 2px;
   background-color: $blue;
@@ -171,7 +183,7 @@
 
 @media (min-width: $tablet-width) {
   .edit__wrapper {
-    width: 660px;
+    width: 620px;
     padding: 43px $content-padding 33px;
     display: flex;
     flex-wrap: wrap;
@@ -179,8 +191,15 @@
   }
 
   .edit__text {
-    padding: 44px 100px 69px;
+    width: 450px;
+    padding: 44px 0 69px;
     font-size: 18px;
+  }
+
+  @-moz-document url-prefix("") {
+    .edit__text {
+      padding: 46px 0 70px;
+    }
   }
 
   .edit__image {
@@ -275,6 +294,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .edit {
+    margin-bottom: 28px;
+  }
+
   .edit__text {
     display: flex;
     flex-direction: column;
@@ -284,15 +307,15 @@
   }
 
   .edit__wrapper {
-    width: 940px;
-    margin: 0 130px 27px;
-    padding-right: 60px;
-    padding-left: 80px;
+    width: 780px;
+    //margin-bottom: 27px;
+    //padding-right: 60px;
+    //padding-left: 80px;
     padding-bottom: 36px;
   }
 
   .edit__form {
-    width: 410px;
+    width: 390px;
     justify-content: space-between;
   }
 
@@ -337,7 +360,7 @@
   }
 
   .edit__buttons {
-    width: 100%;
+    width: 410px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;

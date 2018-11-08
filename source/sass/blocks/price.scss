@@ -7,8 +7,9 @@
 
 .price__list {
   @include list-reset;
-  transform: translateX(-276px);
   display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 .price__item {
@@ -126,6 +127,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .price__list {
@@ -189,11 +192,15 @@
 
 @media (min-width: $desktop-width) {
   .price {
-    padding: 157px 130px 75px;
+    padding: 157px 0 75px;
   }
 
   .price__item {
     width: 233px;
+  }
+
+  .price__wrapper {
+    width: 940px;
   }
 
   .price__header {
@@ -243,5 +250,13 @@
     &:nth-child(2)::before {
       top: 61px;
     }
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (max-width: $tablet-width) {
+  .price__item {
+    position: relative;
+    left: 50%;
+    transform: translateX(-151%);
   }
 }

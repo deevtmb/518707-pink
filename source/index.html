@@ -27,8 +27,10 @@
           </svg>
         </a>
         <button class="page-header__toggle" type="button" aria-label="Закрыть меню">
-          <svg class="page-header__toggle-image" width="24" height="24">
+          <svg class="page-header__toggle-image page-header__toggle-image--burger" width="50" height="24">
             <use xlink:href="#icon-menu-burger"></use>
+          </svg>
+          <svg class="page-header__toggle-image page-header__toggle-image--cross" width="24" height="24">
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
@@ -56,27 +58,29 @@
       <section class="intro-download">
         <div class="intro intro--index">
           <h1 class="intro__title visually-hidden">PINK - самое розовое мобильное приложение!</h1>
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-            <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-            <img class="intro__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Pink">
-          </picture>
+          <div class="intro__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.webp 1x, img/iphone-hand-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x, img/iphone-hand-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+              <img class="intro__image" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Pink">
+            </picture>
+          </div>
           <div class="download">
             <p class="download__title">Взгляните на жизнь иначе!</p>
             <ul class="download__list">
               <li class="download__item download__item--default">
                 <a class="download__link download__link--default" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
               </li>
-              <li class="download__item">
+              <li class="download__item download__item--ios">
                 <a class="download__link download__link--ios" href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Скачать приложение на iOS</span></a>
               </li>
-              <li class="download__item">
+              <li class="download__item download__item--android">
                 <a class="download__link download__link--android" href="https://play.google.com/store/apps?hl=ru"><span class="visually-hidden">Скачать приложение на Android</span></a>
               </li>
-              <li class="download__item">
+              <li class="download__item download__item--windows">
                 <a class="download__link download__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows"><span class="visually-hidden">Скачать приложение на Windows</span></a>
               </li>
             </ul>
@@ -84,7 +88,6 @@
           </div>
 
         </div>
-
       </section>
 
       <section class="information">
@@ -96,10 +99,10 @@
         <ul class="information__list">
           <li class="information__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.webp 1x, img/iphone-screen-1-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-1-tablet@1x.png 1x, img/iphone-screen-1-tablet@2x.png 2x">
               <img class="information__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Pink">
             </picture>
@@ -108,10 +111,10 @@
           </li>
           <li class="information__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.webp 1x, img/iphone-screen-2-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-2-tablet@1x.png 1x, img/iphone-screen-2-tablet@2x.png 2x">
               <img class="information__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Pink">
             </picture>
@@ -120,10 +123,10 @@
           </li>
           <li class="information__item">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-3-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <source media="(min-width: 960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img class="information__image" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Pink">
             </picture>
@@ -167,23 +170,23 @@
               </div>
               <p class="reviews__text">Третий отзыв</p>
             </blockquote>
+            <p class="reviews__arrows">
+              <button class="reviews__arrow reviews__arrow--previous" type="button" aria-label="Предыдущий отзыв">
+                <svg class="reviews__arrow-image" width="26" height="34">
+                  <use xlink:href="#icon-review-arrow-left"></use>
+                </svg>
+              </button>
+              <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Следующий отзыв">
+                <svg class="reviews__arrow-image" width="26" height="34">
+                  <use xlink:href="#icon-review-arrow-right"></use>
+                </svg>
+              </button>
+            </p>
           </div>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--default" type="button"><span class="visually-hidden">Первый отзыв</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">Второй отзыв</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">Третий отзыв</span></button>
-          </p>
-          <p class="reviews__arrows">
-            <button class="reviews__arrow reviews__arrow--previous" type="button" aria-label="Предыдущий отзыв">
-              <svg class="reviews__arrow-image" width="26" height="34">
-                <use xlink:href="#icon-review-arrow-left"></use>
-              </svg>
-            </button>
-            <button class="reviews__arrow reviews__arrow--next" type="button" aria-label="Следующий отзыв">
-              <svg class="reviews__arrow-image" width="26" height="34">
-                <use xlink:href="#icon-review-arrow-right"></use>
-              </svg>
-            </button>
           </p>
         </div>
       </section>

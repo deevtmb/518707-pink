@@ -2,32 +2,33 @@
   @include indent-reset;
   position: relative;
   width: 100%;
+  background-color: $blue;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   &--close {
     position: absolute;
+    background-color: rgba($black, 0.3%);
+    border-bottom: none;
   }
 }
 
 .page-header__wrapper {
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 10;
-  width: 100%;
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 21px $content-padding 18px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: $blue;
   border-top: 1px solid #485461;
-  border-bottom: 1px solid $black;
   box-sizing: border-box;
 
   &--bg {
     position: relative;
-    background-color: rgba($black, 0.3%);
-    border-bottom: none;
   }
 }
 
@@ -56,11 +57,13 @@
 
 .page-header__toggle {
   display: none;
-  width: 30px;
-  height: 30px;
+  padding: 0 0 3px;
+  width: auto;
+  height: 25px;
   border: none;
   cursor: pointer;
   background-color: transparent;
+  text-align: end;
 
   &--js {
     display: block;
@@ -68,9 +71,17 @@
 }
 
 .page-header__toggle-image {
-  width: 24px;
-  height: 24px;
   fill: $white;
+
+  &--cross {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--burger {
+    width: 50px;
+    margin-left: 0;
+  }
 }
 
 .page-header__toggle:hover .page-header__toggle-image,
@@ -85,6 +96,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
+    width: 660px;
     padding-top: 26px;
     padding-bottom: 35px;
     align-items: flex-end;
@@ -104,21 +116,42 @@
   .page-header {
     position: absolute;
     width: 100%;
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: flex-start;
     z-index: 100;
     background-color: rgba($black, 0.3%);
   }
 
   .page-header__wrapper {
-    width: auto;
+    width: 290px;
+    margin: 0;
     position: relative;
-    padding: 27px 130px 36px;
+    padding: 27px 10px 36px;
     border: none;
     background-color: transparent;
+    box-sizing: padding-box;
+    flex-shrink: 1;
+
+    &--bg {
+      position: relative;
+    }
   }
 
   .page-header__toggle {
     display: none;
+  }
+}
+
+@media all and (-ms-high-contrast: none) and (max-width: $desktop-width) {
+  .page-header__wrapper {
+    right: 50%;
+    transform: translateX(50%);
+
+    &--bg {
+      right: 0;
+      transform: translateX(0);
+    }
   }
 }

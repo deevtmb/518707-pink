@@ -27,8 +27,10 @@
           </svg>
         </a>
         <button class="page-header__toggle" type="button" aria-label="Закрыть меню">
-          <svg class="page-header__toggle-image" width="24" height="24">
+          <svg class="page-header__toggle-image page-header__toggle-image--burger" width="50" height="24">
             <use xlink:href="#icon-menu-burger"></use>
+          </svg>
+          <svg class="page-header__toggle-image page-header__toggle-image--cross" width="24" height="24">
             <use xlink:href="#icon-menu-cross"></use>
           </svg>
         </button>
@@ -55,7 +57,10 @@
 
       <section class="intro">
         <h1 class="intro__title intro__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <p class="intro__text intro__text--form">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
+        <div class="intro__text-wrapper">
+          <p class="intro__text intro__text--form">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
+          </p>
+        </div>
       </section>
 
       <section class="contest">
@@ -144,7 +149,9 @@
             <legend class="form__title form__title--text-area">
               <label class="form__text-label" for="review">Опишите свои эмоции</label>
             </legend>
-            <textarea class="form__text form__text--area" name="review" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <div class="form__text-wrapper">
+              <textarea class="form__text form__text--area" name="review" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
           </fieldset>
 
           <div class="form__send">

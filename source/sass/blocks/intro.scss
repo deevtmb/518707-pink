@@ -1,9 +1,10 @@
 .intro {
   position: relative;
-  background: $blue url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
+  background: #1d2631 url("../img/bg-back-mobile@1x.jpg") center 0 no-repeat;
   background-size: 320px 464px;
+  overflow-x: hidden;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx), (min-width: 321px) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
     background-size: 700px 464px;
   }
@@ -15,12 +16,12 @@
 }
 
 .intro__title {
-  width: 100%;
-  margin: 0;
-  padding: 100px $content-padding 84px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 99px $content-padding 84px;
   text-align: center;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 28px;
   color: $white;
   box-sizing: border-box;
@@ -31,13 +32,18 @@
   }
 }
 
-.intro__text {
+.intro__text-wrapper {
   width: 100%;
   margin: 0;
+  background-color: $white;
+}
+
+.intro__text {
+  width: 320px;
+  margin: 0 auto;
   padding: 45px 35px 49px;
   text-align: center;
   line-height: 30px;
-  background-color: $white;
   box-sizing: border-box;
 
   &--form {
@@ -49,9 +55,9 @@
   display: none;
 }
 
-.intro__image {
-  display: block;
-  width: 258px;
+.intro__image-wrapper {
+  margin: 0 auto;
+  width: 320px;
   height: 286px;
 }
 
@@ -65,13 +71,14 @@
     }
 
     &--index {
-      min-height: 727px;
-      padding-top: 0;
+      min-height: 726px;
+      padding-top: 1px;
     }
   }
 
   .intro__title {
-    padding-top: 180px;
+    width: 620px;
+    padding-top: 179px;
     padding-bottom: 139px;
     font-size: 50px;
     line-height: 60px;
@@ -82,7 +89,8 @@
   }
 
   .intro__text {
-    padding: 93px 50px 75px;
+    width: 560px;
+    padding: 93px 0 75px;
     font-size: 18px;
 
     &--form {
@@ -94,12 +102,14 @@
     display: inline;
   }
 
-  .intro__image {
+  .intro__image-wrapper {
     position: absolute;
-    bottom: 0;
-    width: 700px;
+    width: 660px;
     height: 545px;
-    left: -20px;
+    overflow: hidden;
+    bottom: 0;
+    left: 47%;
+    transform: translateX(-50%);
   }
 }
 
@@ -113,7 +123,7 @@
     }
 
     &--index {
-      min-height: 854px;
+      min-height: 853px;
     }
   }
 
@@ -121,7 +131,6 @@
     width: 600px;
     padding-top: 173px;
     padding-bottom: 101px;
-    margin: 0 auto;
 
     &--form {
       width: 800px;
@@ -129,16 +138,18 @@
   }
 
   .intro__text {
-    padding: 92px 300px 88px;
+    width: 600px;
+    padding: 92px 0 88px;
 
     &--form {
-      padding: 92px 200px 71px;
+      width: 800px;
+      padding-bottom: 71px;
     }
   }
 
-  .intro__image {
-    width: 1050px;
+  .intro__image-wrapper {
+    width: 880px;
     height: 645px;
-    left: 12%;
+    left: 48.5%;
   }
 }
